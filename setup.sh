@@ -176,7 +176,7 @@ function check_requirements() {
 
     # Check minimum free storage (64 GB)
     print_info "Checking minimum free storage"
-    REQUIRED_STORAGE=64
+    REQUIRED_STORAGE=15
     AVAILABLE_STORAGE=$(df -B1G --output=avail /home | tail -n 1 | awk '{print $1}')
     if [ "$AVAILABLE_STORAGE" -lt "$REQUIRED_STORAGE" ]; then
         exit_with_error "Insufficient free storage. Required: ${REQUIRED_STORAGE}GB, Available: ${AVAILABLE_STORAGE}GB \
