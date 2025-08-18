@@ -3,8 +3,8 @@
 set -euo pipefail
 APT_UPDATED=0
 
-REPO_OWNER="eylenburg"
-REPO_NAME="linoffice"
+REPO_OWNER="KalonixReal"
+REPO_NAME="linoffice_lowsysreq"
 TARGET_DIR="$HOME/.local/bin/linoffice"
 TMPDIR=$(mktemp -d)
 GITHUB_API_URL="https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/releases"
